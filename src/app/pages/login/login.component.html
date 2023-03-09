@@ -1,0 +1,31 @@
+<div class="login_outer">
+<div class="logo">
+<img src="assets/images/logo.png" alt="Logo" with="200">
+</div>
+<div class="form_outer">
+    <form [formGroup]="loginForm" (ngSubmit)="loginUser()">
+    <div class="form-group">
+        <label>E-mail Address:</label>
+        <input type="email" name="email" id="email" class="form-control"  formControlName="user_email">
+        <span *ngIf="user_email && user_email.invalid && user_email.touched" class="error_msg" >Please enter valid Email Address*</span>
+    </div>
+    <div class="form-group">
+        <label>Password:</label>
+        <small class="small_txt"(click)="viewpass()">Show Password</small>
+        <input [type]="changetype?'password':'text'" class="form-control" formControlName="password" id ="password">
+        <span *ngIf="password && password.invalid && password.touched" class="error_msg" >Password must contain atleast 5 characters long,
+            One lowercase,One uppercase,One number, symbole, or whitespace character</span>
+       </div>
+       <div class="form-group reset_pasword">
+       <small class="small_txt"><a routerLink="/reset_password">Forgot your password?</a></small>
+       </div>
+       <div class="form-checkbox">
+        <input type="checkbox" class="form-check-input" id="checkbox">
+        <label>Remember me</label>
+      </div>
+     <button type="submit" [disabled]="loginForm.invalid" class="btn">Sign in</button>
+    </form>
+    <p class="new_signup"><a routerLink="/signup">New user Registeration here</a></p>
+    </div>
+</div>
+

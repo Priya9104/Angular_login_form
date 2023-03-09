@@ -1,0 +1,31 @@
+<div class="login_outer">
+    <div class="logo">
+    <img src="assets/images/logo.png" alt="Logo" with="200">
+    <h2>It’s great to meet you.</h2>
+    <p>Before you dive in, let's get the rest of your account details in order.
+    </p>
+    </div>
+    <div class="form_outer">
+        <form [formGroup]="sinupform" (ngSubmit)="signupUser()">
+            <div class="form-group">
+                <label>First name</label>
+                <input type="text" name="text" id="text" class="form-control" formControlName="firstname">
+            </div>
+            <div class="form-group">
+                <label>Last name</label>
+                <input type="text" name="text" id="text" class="form-control" formControlName="lastname">
+            </div>
+            <div class="form-group">
+                 <label>New password:</label>
+                 <small class="small_txt" (click)="viewpass()">Show Password</small>
+                 <input [type]="changetype?'password':'text'" class="form-control" formControlName="password">
+                 <span *ngIf="password && password.invalid && password.touched" class="error_msg" >Password must contain atleast 5 characters long,
+                    One lowercase,One uppercase,One number, symbole, or whitespace character</span>
+            </div>
+       <button type="submit" [disabled]="sinupform.invalid"class="btn">Continue</button>
+        </form>
+        <p class="new_signup">Go back to <a routerLink="/login"> practiceOS Login</a></p>
+        </div>
+    </div>
+    
+    

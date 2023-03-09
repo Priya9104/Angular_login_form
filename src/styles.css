@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    background-color: #f7fbfe;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+   max-width:1200px;
+   margin: 0 auto;
+}
+p {
+    margin: 0 0 10px;
+}
+.outer_wrapper {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.outer_wrapper .container {
+    width: 100%;
+}
+.logo {
+    text-align: center;
+}
+.form_outer {
+    max-width: 450px;
+    margin: 60px auto 0;
+}
+.form-group label {
+    font-size: 15px;
+    letter-spacing: 0px;
+    line-height: 20px;
+    color: #33475b;
+    font-weight: 400;
+    margin-bottom: 7px;
+    vertical-align: middle;
+    display: inline-block;
+}
+.form-control {
+    min-height: 40px;
+    border-radius: 4px;
+    filter: drop-shadow(-1.095px 6.914px 10.5px rgba(162,211,248,0.16));
+    background-color: #ffffff;
+    border: 1px solid #cbd6e2;
+    width: 100%;
+   padding: 8px;
+    box-sizing: border-box;
+}
+.form_outer  button.btn {
+    width: 100%;
+    min-height: 42px;
+    border-radius: 3px;
+    background-color: #6aa74d;
+    border: 0;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Roboto";
+    padding: 10px;
+    cursor: pointer;
+}
+.logo p {
+    font-size: 15px;
+    line-height: 1;
+    color: #33475b;
+    font-weight: 400;
+    text-align: center;
+}
+.logo h2 {
+    font-size: 25px;
+    line-height: 1;
+    color: #33475b;
+    font-weight: 400;
+    text-align: center;
+    margin: 20px 0;
+}
+.new_signup a:hover {
+    text-decoration: underline;
+}
+.new_signup a{
+    color: #6aa74d;
+     display: inline-block;
+    text-decoration: none;
+}
+p.new_signup {
+    margin-top: 30px;
+    text-align: center;
+}
+.form-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+small.small_txt,.form-group.reset_pasword small.small_txt a {
+    font-size: 13px;
+    line-height: 1;
+    color: #6aa74d;
+    font-weight: 500;
+    cursor: pointer;  
+    text-decoration: none;  
+}
+span.error_msg {
+    display: block;
+    margin-top: 10px;
+    font-size: 13px;
+    color: red;
+}
+.form-checkbox input#checkbox {
+    margin: 0 !important;
+    display: inline-block;
+    vertical-align: middle;
+}
+.form-checkbox label {
+    font-size: 13px;
+    line-height: 1;
+    color: #33475b;
+    font-weight: 400;
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 10px;
+}
+.form-checkbox {
+    margin-bottom: 35px;
+}
+.footer_outer {
+    border-top: 1px solid rgb(166 167 173 / 12%);
+}
+.form-group.reset_pasword small.small_txt {
+    margin-bottom: 0;
+}
+small.small_txt, .form-group.reset_pasword small.small_txt a {
+    margin-bottom: 10px;
+}

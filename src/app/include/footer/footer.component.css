@@ -1,0 +1,11 @@
+.footer_outer {
+    padding: 20px 0;
+}
+.footer_outer p {
+    font-size: 15px;
+    letter-spacing: 0px;
+    line-height: 20px;
+    color: #33475b;
+    text-align: center;
+    margin-bottom: 0;
+}
